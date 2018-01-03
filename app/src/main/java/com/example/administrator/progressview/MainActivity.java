@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
         progressView2 = (ProgressView) findViewById(R.id.progress2);
         progressView3 = (ProgressView) findViewById(R.id.progress3);
 
-        progressView1.setProgress(25);
+        // 动态效果
+        ProgressHelper helper = new ProgressHelper(progressView1, 65);
+        helper.start();
+
+        // 默认模式
         progressView2.setProgress(50);
         progressView3.setProgress(100);
     }

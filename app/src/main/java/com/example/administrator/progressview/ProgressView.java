@@ -122,4 +122,11 @@ public class ProgressView extends View {
         invalidate();
     }
 
+    /**
+     * 获取进度值
+     */
+    public int getProgress() {
+        return progress;
+    }
+
 }
